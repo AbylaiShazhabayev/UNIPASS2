@@ -1,0 +1,8 @@
+// stylelint-disable declaration-no-important
+@use "sass:math";
+
+@for $i from 0 through 20 {
+    .opacity-#{$i * 5} {
+        opacity: $i * math.div(5, 100) !important;
+    }
+}
